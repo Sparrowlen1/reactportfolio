@@ -6,7 +6,6 @@ import ProjectList from './components/ProjectList'
 import Footer from './components/Footer'
 
 function App() {
-  // All state is here in the parent component
   const [projects, setProjects] = useState([
     { id: 1, title: "Gaming site", category: "Game", description: "Compete in Call Of Duty Mobile for exclusive rewards" },
     { id: 2, title: "Mobile App", category: "App Dev", description: "Carwash daraja integrated App" },
