@@ -14,14 +14,13 @@ function App() {
   ])
 
   const [search, setSearch] = useState('')
-
-  // Function to add new project
+ 
   const addProject = (newProject) => {
     setProjects([...projects, { ...newProject, id: Date.now() }])
     alert('howdy sparrow, project added successfuly')
   }
 
-  // Filter projects based on search
+
   const filteredProjects = projects.filter(project =>
     project.title.toLowerCase().includes(search.toLowerCase()) ||
     project.category.toLowerCase().includes(search.toLowerCase())
